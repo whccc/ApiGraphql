@@ -1,0 +1,13 @@
+# Querys Consults
+query{
+    message{
+        _id
+    }
+}
+
+# Querys Mutation Create
+mutation {
+    createMessage(title:"hola",content:"Contante",author:"Fazt"){
+        _id
+    }
+}

@@ -1,0 +1,21 @@
+#Consultas
+type Query {
+  ping: String!
+  messages:[Message]
+}
+
+#Mutation
+type Mutation{
+  createMessage(title:String!,content:String!,author:String!):Message
+}
+
+# ! is required
+type Message{
+  _id:ID!
+  title:String!
+  contante:String!
+  author:String!
+}
+
+
+
